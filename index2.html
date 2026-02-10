@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+      .cuadro {
+        border: 1px solid;
+        width: 150px;
+        height: 150px;
+      }
+
+      .borde-5 {
+        border-width: 5px;
+      }
+    </style>
+</head>
+<body>
+    <h1>condicionales y bucles</h1>
+    <div class="cuadro">Entrar</div>
+    <form action="">
+    <script>
+console.log ("condicionales y bucles")
+let equipo= prompt ("¿Cual es tu equipo favorito?")
+if (true) {
+    console.log ("dentro")
+    }
+    if (false) {
+    console.log ("fuera")
+    }
+    if (equipo=="barca") {
+    console.log ("tienes razon")
+    }
+    else {
+    console.log ("fuera de aqui")
+    }
+
+    let cuadro = document.querySelector(".cuadro");
+    cuadro.addEventListener("click", function() {
+        console.log("has entrado")
+    })
+
+    </script>
+</body>
+</html>
