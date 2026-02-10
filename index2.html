@@ -8,29 +8,37 @@
       .cuadro {
         border: 1px solid;
         width: 150px;
-        height: 150px;
+        height: 20px;
       }
 
-      .borde-5 {
-        border-width: 5px;
+      .borde-30 {
+        border-width: 30px;
       }
     </style>
 </head>
 <body>
     <h1>condicionales y bucles</h1>
+    <h2>edad</h2>
     <div class="cuadro">Entrar</div>
-    <form action="">
+     <form action="">
+      <input
+        type="text"
+        id="nombre"
+        placeholder="Pon aqui tu edad"
+        value=""
+      />
+    </form>
     <script>
 console.log ("condicionales y bucles")
-let equipo= prompt ("¿Cual es tu equipo favorito?")
+let edad= prompt ("¿Cual es tu edad?")
 if (true) {
-    console.log ("dentro")
+    console.log ("bien")
     }
     if (false) {
-    console.log ("fuera")
+    console.log ("fuera de aqui")
     }
-    if (equipo=="barca") {
-    console.log ("tienes razon")
+    if (edad=18) {
+    console.log ("bien")
     }
     else {
     console.log ("fuera de aqui")
@@ -40,7 +48,16 @@ if (true) {
     cuadro.addEventListener("click", function() {
         console.log("has entrado")
     })
-
+    let placeholder = document.querySelector("input");
+    placeholder.addEventListener("input", function(verificada) {
+        console.log("edad verificada")
+        })
+    if (placeholder.value >= 18) {
+    console.log ("bien")
+    }
+    else {
+    console.log ("fuera de aqui")
+    }
     </script>
 </body>
 </html>
